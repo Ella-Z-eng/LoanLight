@@ -17,7 +17,7 @@ let months;
 // up top (using the input data from the form, use querySelector again)
 // run loanPayoffTime afterwards
 
-
+document.querySelector("submit");
 
 // Given the info above, calculate the number of months needed to pay off
 // Store that info in months
