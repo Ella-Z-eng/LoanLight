@@ -32,7 +32,7 @@ function loanPayoffTime(Principal, rate, loanPayment) {
   while(Principal*((1+monthly)**t) > loanPayment*t) {
     t++;
   }
-  if (t == 0) {
+  if (t === 0) {
     return "You can already pay off your loan";
   }
   return "You can pay off your loan in "+t+" Months!";
