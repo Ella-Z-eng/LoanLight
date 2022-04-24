@@ -17,7 +17,28 @@ let months;
 // up top (using the input data from the form, use querySelector again)
 // run loanPayoffTime afterwards
 
-document.querySelector("submit");
+const btn = document.querySelector('#submit');
+
+
+function setVariables(loanA, intR, sal){
+  loanAmt= loanA;
+  interestRate = intR;
+  salary = sal;
+}
+
+btn.addEventListener('click', () => {
+  btn.textContent = 'loan repayment 2';
+  const rndCol = `rgb(${2}, ${15}, ${150})`;
+  document.body.style.backgroundColor = rndCol;
+  setVariables(1, 2, 3);
+  loanPayoffTime(loanAmt, interestRate, salary)
+});
+function hi(){ //test button press
+  console.log("Hi")
+}
+
+// I have absolutely no idea what I'm doing
+// I've been doing this for like 2 hours and I still have no clue how html and stuff is supposed to work
 
 // Given the info above, calculate the number of months needed to pay off
 // Store that info in months

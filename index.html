@@ -90,8 +90,8 @@
         </div>
     </nav>-->
     <header class="">
-        <div class="page-header min-vh-75" style="background-image: url(https://media.istockphoto.com/photos/happy-students-walking-together-in-campus-having-break-picture-id1165683016?k=20&m=1165683016&s=612x612&w=0&h=Rzay--91ScZFiD-eJL6o6jA3v3AUBokbaOEjxgPGzSQ=);">
-            <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="page-header min-vh-75" style="background-image: url(https://wallpaperaccess.com/full/6592911.jpg);">
+            <span class="mask bg-gradient-dark opacity-5"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-sm-9 text-center mx-auto">
@@ -120,18 +120,29 @@
 
     <body>
         <div class="form">
+            <script type = "text/javascript">  
+                function changePage() {   
+                    let url="http://google.com";
+                    window.location(url); 
+                }
+            </script>  
             <form>
                 <label for="amt">Loan Amount: </label>
                 <input type="text" id="amt" />
+                &nbsp
                 <label for="interest">Interest Rate: </label>
                 <input type="text" id="interest" />
-                <label for="salary">Monthly Salary: </label>
+                &nbsp
+                <label for="salary">How much will you repay per month? </label>
                 <input type="text" id="salary" />
-                <label for="tax">State Tax Amount:</label>
-                <input type="text" id="tax" />
-                <button type="submit">
+                &nbsp
+                &nbsp
+                &nbsp
+                <button type="submit" id="calculateTax">
                 Find How to Lighten Your Loan!
                 </button>
+                <script src="TaxCalculatorButton.js">
+                </script>
             </form>
         </div>
 
@@ -380,7 +391,7 @@
                         <p class="text-sm text-white opacity-8 mb-0">
                             Copyright © <script>
                                 document.write(new Date().getFullYear())
-                            </script> Soft by Creative Tim.
+                            </script> LoanLight by Albecryuel.
                         </p>
                     </div>
                     <div class="col-lg-6 ms-auto text-lg-end text-center">
